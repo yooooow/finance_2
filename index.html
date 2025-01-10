@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inzofin</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Add custom styles here */
+    .contact {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .logout-btn {
+      margin-left: auto; /* Pushes the logout button to the right */
+      background-color: #ff4d4d; /* Red color */
+      color: white;
+      padding: 8px 16px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .logout-btn:hover {
+      background-color: #e63946; /* Darker red for hover effect */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="top-bar">
+      <div class="address">684 West College St, Sun City, USA</div>
+      <div class="contact">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <!-- Logout button -->
+        <a href="signin.html" class="logout-btn">Logout</a>
+      </div>
+    </div>
+    <nav>
+      <div class="logo">Inzofin</div>
+      <ul class="menu">
+        <li><a href="main.html">Home</a></li> <!-- Link to main.html -->
+        <li><a href="about.html">About Us</a></li> <!-- Link to about.html -->
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="question">
+        <span>Have any questions?</span>
+        <a href="tel:2324567890">(63) 902-3213</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="content">
+        <h2>Welcome to Ours Finance Web</h2>
+        <h1>Grow Your Business</h1>
+        <p>Investing should be more like watching paint dry or watching grass grow.
+            "Do not save what is left after spending, but spend what is left after saving."</p>
+        <!-- Updated the href to go to 'learn.html' -->
+        <a href="learn.html" class="btn">Learn More</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

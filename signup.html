@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create an Account - Finance Hub</title>
+    <link rel="stylesheet" href="signup.css">
+    <script>
+        function redirectToLogin() {
+            window.location.href = 'login.html';  // Redirects to login page when "Create Account" is clicked
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Account Creation Section -->
+    <section class="account-container">
+        <div class="account-box">
+            <h2>Create an Account</h2>
+            <form action="#" method="POST" onsubmit="redirectToLogin(); return false;"> <!-- Prevent default submit -->
+                <!-- Username -->
+                <div class="textbox">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Enter Username" required>
+                </div>
+
+                <!-- Email -->
+                <div class="textbox">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter Email" required>
+                </div>
+
+                <!-- Password -->
+                <div class="textbox">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter Password" required>
+                </div>
+
+                <!-- Confirm Password -->
+                <div class="textbox">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password" required>
+                </div>
+
+                <!-- Terms & Conditions -->
+                <div class="terms">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the <a href="#">Terms & Conditions</a></label>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="submit-btn">
+                    <button type="submit">Create Account</button>
+                </div>
+
+                <!-- Link to Login Page -->
+                <div class="links">
+                    <p>Already have an account? <a href="login.html">Sign In</a></p>
+                </div>
+
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>
